@@ -6,9 +6,11 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
+import frc.robot.subsystems.DriveTrain;
 
 public class Move extends Command {
   double m_time, m_lSpeed, m_rSpeed;
+  
   public Move(double time, double lSpeed, double rSpeed) {
    m_time = time;
    m_lSpeed = lSpeed;

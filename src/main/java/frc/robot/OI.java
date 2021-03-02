@@ -19,7 +19,7 @@ import frc.robot.commands.TankDrive;
 public class OI {
   //private Joystick driverController = new Joystick(RobotMap.DRIVER_CONTROLLER);
  private XboxController driverController = new XboxController(RobotMap.DRIVER_CONTROLLER);
-  Button xButton = new JoystickButton(driverController, RobotMap.Button_X) ;
+  //Button xButton = new JoystickButton(driverController, RobotMap.Button_X) ;
   
   public double GetDriverRawAxis(int axis){
     return driverController.getRawAxis(axis);
@@ -27,7 +27,7 @@ public class OI {
   }
   public OI() {
 
-    xButton.whenPressed(new TankDrive()); // chamge the command to move sequence if you want the whole command to run
+   // xButton.whenPressed(new TankDrive()); // chamge the command to move sequence if you want the whole command to run
 
      }//open driver station and go to 4th button down and find USB order
   //// CREATING BUTTONS

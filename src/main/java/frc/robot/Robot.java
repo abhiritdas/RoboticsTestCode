@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import frc.robot.commands.Autonomous;
 import frc.robot.commands.MoveSequence;
 import frc.robot.subsystems.DriveTrain;
 
@@ -33,8 +34,9 @@ public class Robot extends TimedRobot {
   public void robotInit() {// happens when the code starts
     m_oi = new OI();
     //you have to initalize the autonomous command 
-    m_autonomousCommand = new MoveSequence();
-
+    System.out.println("running robot.java init");
+    //m_autonomousCommand = new MoveSequence();
+    m_autonomousCommand = new Autonomous(1, 0.3);
    
   }
 
